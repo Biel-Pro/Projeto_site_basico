@@ -1,0 +1,156 @@
+@charset"UTF-8";
+/*Definiçao do cabeçalho dessa pagina*/
+#menu ul { 
+    list-style:none;
+    display:block;
+    position:absolute;
+    top:0px;
+    left:600px;
+ }
+ #menu li { 
+    display:inline-block;
+    padding:15px;
+    margin:2px;
+    font-size:25px;
+  }
+  #menu li:hover { 
+      text-decoration:underline; 
+      background-color:#606060;
+   }
+   #menu a { 
+      color:black;
+    }
+    #menu a:hover { 
+      color:#ffffff;
+      text-decoration:underline;
+     }
+  #titulo h1 { 
+        text-align:  left;
+        font-size:25pt;
+        text-indent:30px;
+        text-shadow:1px 1px 3px black;
+   }
+  #titulo h2 { 
+    font-size:20pt;
+    text-indent:30px;
+    text-shadow:1px 1px 3px black;
+   }
+   /*Manipulando imagem*/
+  #cabecalho img { 
+    position:absolute;
+    top:100px;
+    left:1050px;
+   }
+   #cabecalho { 
+    height:380px;
+    border-bottom:3px solid black;
+    background:url(../_Imagens/html.png) 0px 130px;
+    background-repeat:no-repeat;
+    }
+    /*Definição de interface*/
+    #interface { 
+      width:1300px;
+      padding:10px 10px 10px 10px;
+      margin:0px auto 10px auto;
+      background-color:#ffffff;
+      box-shadow:1px 1px 10px black;
+     }
+    #rodape p{ 
+      font-size:18pt;
+      text-align:center;
+      border-top:3px solid black;
+      }
+
+
+form { 
+	width:600px;
+	margin:auto;
+  background-color:#dddddd;
+
+ }
+ h1 { 
+ 	text-align:center;
+  }
+.usuario input { 
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size:15pt;
+	background-color: rgba(255,255,255,0.8);
+ }
+ .endereco input { 
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size:15pt;
+  background-color: rgba(255,255,255,0.8);
+ }
+ .pedido input {  
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size:15pt;
+  background-color: rgba(255,255,255,0.8);
+ }
+
+ input:hover { 
+ 	background-color: #dddddd;
+  }
+  legend {
+  	column-width:bold;
+  	font-size:18pt;
+  	font-family:Arial,sans-serif;
+  }
+  fieldset { 
+  	border-color:#cecece;
+  	margin:10px; 
+   }
+  .usuario { 
+  	background-image: url(../_Imagens/usuario.png);
+    background-size:200px;
+  	background-repeat:no-repeat;
+  	background-position:100% 100%;
+  	margin:-3px;
+   }
+  .endereco { 
+  	background: url("../_Imagens/endereco.png");
+  	background-repeat:no-repeat;
+  	background-position:98% 100%;
+  	margin-right:15px;
+  	margin:-3px;
+   }
+  .pedido { 
+	background: url("../_Imagens/pagamento.png");
+	background-repeat:no-repeat;
+	background-position:100% 98%;
+	margin:-10px;
+  top:100px;
+  }
+  .mensagem { 
+  margin:-3px;
+   }
+  #corpo h1 { 
+    font-size: 30pt;
+    text-decoration:underline;
+    text-shadow:1px 1px 3px black;
+   }
+    #sex {
+      font-size:10pt; 
+     }
+   .usuario label { 
+    font-size:18pt;
+    }
+    #dn { 
+      font-size:18pt;
+     }
+     .endereco p { 
+      font-size:18pt;
+      }
+      .pedido p{ 
+        font-size:18pt;
+       }
+    .mensagem label { 
+      font-size:18pt;
+     }
+     #titulo legend { 
+      font-size:25pt;
+      text-shadow:1px 1px 3px black;
+      }
+    

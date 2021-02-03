@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contato</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="_CSS/form.css">
+
+	<script> 
+		function cal_total() {
+			var qtd = parseInt(document.getElementById('pQtd').value);
+			preco = qtd * 1500;
+			document.getElementById('preco').value = preco;
+		}
+	</script>
+</head>
+<body>
+	<div id="interface">
+	<header id="cabecalho">
+<hgroup id="titulo">
+<h1>Testando meus conhecimentos</h1>
+<h2>Partiu !!!!</h2>
+</hgroup>
+<img src="_Imagens/logo.png" width="320px" height="280px"> 
+<nav id="menu"> 
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="specs.html">Especificações</a></li>
+		<li><a href="fotos.html">Fotos</a></li>
+		<li><a href="multimidia.html">Multimidia</a></li>
+		<li><a href="fale-conosco.html">Fale conosco</a></li>
+</ul>
+</nav>
+</header>
+<section id="corpo">
+<h1>Formulário para contato</h1>
+	<form id="titulo" method="GET" action="form.php" id="fcontato" oninput="cal_total();" >
+	<fieldset class="usuario"><legend id="tiusuario">Identificação do usuário</legend>
+	<p><label  for="cnome">Nome:</label><input type="text" name="nome" id="cnome" placeholder="Nome completo"></p>
+	<p><label for="csenha">Senha:</label><input type="password" name="senha" id="csenha" placeholder="8 dígitos"></p>
+	<p><label for="cemail">E-mail:</label><input type="E-mail" name="email" id="cemail"></p>
+	<p><label>Sexo:</label><br>
+		<input type="radio" name="Sexo" id="MAS"> <label for="MAS">Masculino</label><br>
+		<input type="radio" name="Sexo" id="FEM" > <label for="FEM">Feminino</label>
+
+		<p id="dn">Data Nascimento :<input type="date" name="data" id="cdata"></p>
+	</fieldset>
+
+	<fieldset class="endereco"><legend>Endereço do usuário</legend> 
+	<p>Logradoura:<input type="text" name="endereco" id="cRua" placeholder="Rua, Av...">
+	<p>Número:<input type="number" name="Num" id="cNum" min="1" max="15000">
+	<p><label for="EST">Estado:</label><input type="text" name="estado" id="EST" for="EST">
+		<!--<selct name="Estado" id="EST">
+			<option>Rio de Janeiro</option>
+			<option>São Paulo</option>
+			<option>Minas Gerais</option>
+			<option>Santa Catarina</option>
+		</selct></p>-->
+	<p>Cidade:<input type="text" name="cidade" id="cCidade" placeholder="Sua cidade"list="Tcidade">
+		<datalist id="Tcidade">
+			<option value="Rio de Janeiro"></option>
+			<option value="Nova Iguaçu"></option>
+			<option value="Niterói"></option>
+		</datalist>
+	</fieldset>
+	<fieldset class="pedido"><legend>Gostaria uma luva de boxe</legend>
+	<p>Gostaria de uma luva quando disponivel<imput type="checkbox" name="tPed" id="cPed">
+	<p>Cor :<input type="color" name="Cor" id="pCor"></p>
+	<p>Quantidade :<input type="number" name="Qtd" id="pQtd" min="0" max="5" value="0"></p> 	 
+	<p>Preço Total :R$<input type="number" name="Prec" id="preco" placeholder="Total a pagar"></p>
+	</fieldset>
+	<input type="submit" value="Enviar" button>
+	</form>
+	</section>
+
+
+
+
+<footer id="rodape">
+<p>Copyright &copy; 2020 - by Gabriel Almeida <br>
+Facebook / Instagram</p>
+</footer>
+
+
+
+	
+
+</div>
+</body>
+</html>
